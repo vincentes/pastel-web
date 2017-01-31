@@ -1,0 +1,28 @@
+{% extends 'tunes/base.html' %}
+
+{% block body %}
+    <div class="center sm-center">
+        <div class="container-fluid album-container" id="album-container">
+            <h1>Your albums</h1>
+            <div class="row">
+                {% for album in all_albums %}
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="album">
+                            <div class="album-decor"></div>
+                            <a href="{% url 'music:album' album.id %}">
+                                <img id="album{{ album.id }}" src="{{ album.album_logo }}">
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <input type="button" class="add-album" value="+">
+                </div>
+            </div>
+            <div id="clear" style="clear:both;"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    </script>
+{% endblock %}

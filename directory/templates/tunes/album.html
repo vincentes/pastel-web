@@ -1,0 +1,27 @@
+{% extends 'tunes/base.html' %}
+{% block title %}{{ album.artist }} - {{ album.name }}{% endblock %}
+
+{% block body %}
+    <div class="album-details">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <img src="{{ album.album_logo }}" width="400" height="400" alt="{{ album.name }} album logo">
+            </div>
+
+            <div class="col-md-4">
+                <h2>{{ album.name }}</h2>
+                <h3>{{ album.artist }}</h3>
+
+                <ul class="song-list">
+                    {% for song in album.song_set.all %}
+                        <li><p><span class="glyphicon-play"></span>{{ song.title }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

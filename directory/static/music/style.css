@@ -1,0 +1,121 @@
+body {
+    background-color: #DCDCDC;
+}
+
+.navbar {
+    border-radius: 0;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Rancho', cursive;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Rancho', cursive;
+}
+
+.navbar {
+    margin-bottom: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.album-container {
+    margin-top: 0;
+    background-color: #1e1e1e;
+    overflow: auto;
+}
+
+.album {
+    display: inline;
+    width: 230px;
+}
+
+.album-container .album a img {
+    height: 200px;
+    margin: 20px 30px 20px 0px;
+    border: white solid 3px;
+}
+
+h1, h2, h3 {
+    font-family: 'Patua One', sans-serif;
+    border: white dashed 2px;
+    display: inline-block;
+    background-color: white;
+    color: #101010;
+    padding: 0 5px 0 5px;
+}
+
+.add-album {
+    margin: 20px 30px 20px 0px;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    background-color: #101010;
+    color: white;
+    border: dashed white 2px;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 0.3s;
+    opacity: 0.5;
+    font-weight: 100;
+}
+
+.add-album:hover {
+    font-size: 110px;
+    opacity: 1;
+}
+
+.navbar-pastel {
+    background-color:#fff;
+    color:#101010;
+    border-radius:0;
+}
+
+.navbar-pastel .navbar-nav > li > a {
+    color:#101010;
+    font-size: 18px;
+}
+.navbar-pastel .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #101010;
+    background-color:transparent;
+}
+.navbar-pastel .navbar-brand {
+    color:#101010;
+    font-family: 'Patua One', sans-serif;
+    font-size: 27px;
+}
+
+.album-details {
+    padding-top: 160px;
+    background-color: #1e1e1e;
+    overflow: auto;
+    min-height: calc(100vh - 54px);
+}
+
+@media (max-width: 768px) {
+    .album-details {
+        margin-top: 0;
+        background-color: #1e1e1e;
+        overflow: auto;
+        min-height: calc(100vh - 52px);
+    }
+}
+
+.song-list {
+    color: white;
+    list-style: none;
+    padding-left: 0;
+}
+
+.song-list li {
+    margin-top: 15px;
+    position: relative;
+    background-color: #101010;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.song-list p {
+    color: gray;
+}
